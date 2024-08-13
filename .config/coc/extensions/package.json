@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "coc-tailwindcss": ">=0.7.0"
+  }
+}

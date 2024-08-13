@@ -1,0 +1,12 @@
+        {
+          "tailwindCSS.includeLanguages": {
+            "typescript": "javascript",
+            "typescriptreact": "javascript",
+            "javascriptreact": "javascript"
+          },
+          "tailwindCSS.emmetCompletions": true,
+          "tailwindCSS.experimental.classRegex": [
+            ["tv\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"]
+          ]
+        }
+      
