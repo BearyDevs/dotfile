@@ -226,38 +226,6 @@ function colors() {
 
 alias color='colors'
 
-# ╭──────────────────────────────────────────────────────────╮
-# │ #Git │
-# ╰──────────────────────────────────────────────────────────╯
-
-# type gg to use git gui
-
-alias g='git'
-alias gs='git status -s'
-alias gaa='git add .'
-alias ga='git add'
-alias gp='git push'
-alias gb='git branch'
-alias gsw='git switch'
-alias gres='git reset --hard'
-alias gc='git commit'
-alias gpu='git pull'
-alias gf='git fetch'
-alias gll='git log'
-alias glls='git log --stat'
-alias gllp='git log --patch'
-alias gl='git log --oneline --all --graph'
-alias gls='git log --oneline --stat'
-alias glp='git log --oneline --patch'
-alias glr='git log --oneline --reverse'
-alias gus='git restore --staged'
-alias gbprune='git checkout main && git branch | grep -v "^\*" | grep -v "main" | xargs git branch -D'
-alias gul='git config --global --list' # or cat ~/.gitconfig
-alias gd='git diff'
-alias gco='git checkout' # git checkout branchName || git checkout -b branchName || git checkout HEAD fileName.[filesignature]txt, js, ts
-alias gre='git restore'
-alias gmer='git merge'
-
 alias ccp='pwd | pbcopy'
 alias vscode-repeat-key='defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false'
 alias vscode-insiders-repeat-key='defaults write com.microsoft.VSCodeInsiders ApplePressAndHoldEnabled -bool false'
@@ -887,7 +855,8 @@ alias glp='git log --oneline --patch'
 alias glr='git log --oneline --reverse'
 alias gus='git restore --staged'
 alias gbprune='git checkout main && git branch | grep -v "^\*" | grep -v "main" | xargs git branch -D'
-alias gul='git config --global --list' # or cat ~/.gitconfig
+alias gcgl='git config --global --list' # or cat ~/.gitconfig
+alias gcg='git config --global -e'
 alias gd='git diff'
 alias gco='git checkout' # git checkout branchName || git checkout -b branchName || git checkout HEAD fileName.[filesignature]txt, js, ts
 alias gre='git restore'
@@ -1218,9 +1187,10 @@ alias bkneofetchcustom='cp -rvf ~/neofetch-custom.txt ~/dotfile && echo "\033[1;
 alias afterdone='cd ~/dotfile && gs && gaa && gc && gp && home && clr && echo -e DOTFILE STORE SUCCESS'
 alias store-iterm2-all-config='cp ~/Library/Preferences/com.googlecode.iterm2.plist ~/dotfile && echo "\033[1;36m **com.googlecode.iterm2.plist copy success\033[0m"'
 alias restore-iterm2-config='cp ~/dotfile/com.googlecode.iterm2.plist ~/Library/Preferences/com.googlecode.iterm2.plist'
+alias store-gitconfig='cp ~/.gitconfig ~/dotfile && echo "\033[1;36m **.gitconfig copy success\033[0m"'
 
 # Combined alias to run all backup commands with a 1-second pause between each and print completion message in orange
-alias storeDotfile='home; dlconfigfirst && sleep 1 && bkconfig && sleep 1 && bkp10 && sleep 1 && bktmux && sleep 1 && bkzsh && sleep 1 && dkara && sleep 1 && dgh && sleep 1 && diterm && sleep 1 && bkneofetchcustom && sleep 1 && store-iterm2-all-config && sleep 1 && echo -e "\033[38;2;255;215;0mALL SCRIPT BACKUP IS DONE, Please commit state\033[0m" && sleep 2 && afterdone'
+alias storeDotfile='home; dlconfigfirst && sleep 1 && bkconfig && sleep 1 && bkp10 && sleep 1 && bktmux && sleep 1 && bkzsh && sleep 1 && dkara && sleep 1 && dgh && sleep 1 && diterm && sleep 1 && bkneofetchcustom && sleep 1 && store-iterm2-all-config && sleep 1 && store-gitconfig && sleep 1 && echo -e "\033[38;2;255;215;0mALL SCRIPT BACKUP IS DONE, Please commit state\033[0m" && sleep 2 && afterdone'
 alias dotfile='cd ~/dotfile/'
 
 # alias minfo='echo -e "\033[38;2;255;215;0m🅷 🅸  🅱 🅴 🅰 🆁 🆈 , \033[38;2;148;0;211m🅷 🅰 🅿 🅿 🆈  🅲 🅾 🅳 🅸 🅽 🅶 \033[0m"' # Normal font

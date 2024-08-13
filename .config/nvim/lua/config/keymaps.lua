@@ -133,6 +133,8 @@ keymap.set({ "n", "v" }, "gm", function()
   Util.format({ force = true })
 end, { desc = "Format" })
 
+-- Ctrl + / to toggle float terminal
+
 -- ╭─────────────────────────────────────────────────────────╮
 -- │ keymap of dial-nvim from LazyExtras                     │
 -- ╰─────────────────────────────────────────────────────────╯
