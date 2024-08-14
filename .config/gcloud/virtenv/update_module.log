@@ -1,0 +1,18 @@
+2024-08-13T14:41:36,561 Using pip 23.2.1 from /Users/bearydev/.config/gcloud/virtenv/lib/python3.11/site-packages/pip (python 3.11)
+2024-08-13T14:41:36,561 Non-user install because user site-packages disabled
+2024-08-13T14:41:36,692 Created temporary directory: /private/var/folders/7n/mg381kx96d77tr614rmw_3pw0000gn/T/pip-build-tracker-nom9wmre
+2024-08-13T14:41:36,693 Initialized build tracking at /private/var/folders/7n/mg381kx96d77tr614rmw_3pw0000gn/T/pip-build-tracker-nom9wmre
+2024-08-13T14:41:36,693 Created build tracker: /private/var/folders/7n/mg381kx96d77tr614rmw_3pw0000gn/T/pip-build-tracker-nom9wmre
+2024-08-13T14:41:36,693 Entered build tracker: /private/var/folders/7n/mg381kx96d77tr614rmw_3pw0000gn/T/pip-build-tracker-nom9wmre
+2024-08-13T14:41:36,693 Created temporary directory: /private/var/folders/7n/mg381kx96d77tr614rmw_3pw0000gn/T/pip-install-8_55ypy0
+2024-08-13T14:41:36,694 Created temporary directory: /private/var/folders/7n/mg381kx96d77tr614rmw_3pw0000gn/T/pip-ephem-wheel-cache-xr5ia60n
+2024-08-13T14:41:36,708 Requirement already satisfied: crcmod in /Users/bearydev/.config/gcloud/virtenv/lib/python3.11/site-packages (1.7)
+2024-08-13T14:41:36,709 Requirement already satisfied: grpcio in /Users/bearydev/.config/gcloud/virtenv/lib/python3.11/site-packages (1.65.4)
+2024-08-13T14:41:36,709 Requirement already satisfied: pyopenssl==23.2.0 in /Users/bearydev/.config/gcloud/virtenv/lib/python3.11/site-packages (23.2.0)
+2024-08-13T14:41:36,709 Requirement already satisfied: google_crc32c in /Users/bearydev/.config/gcloud/virtenv/lib/python3.11/site-packages (1.5.0)
+2024-08-13T14:41:36,710 Requirement already satisfied: certifi in /Users/bearydev/.config/gcloud/virtenv/lib/python3.11/site-packages (2024.7.4)
+2024-08-13T14:41:36,710 Requirement already satisfied: cryptography in /Users/bearydev/.config/gcloud/virtenv/lib/python3.11/site-packages (41.0.7)
+2024-08-13T14:41:36,720 Requirement already satisfied: cffi>=1.12 in /Users/bearydev/.config/gcloud/virtenv/lib/python3.11/site-packages (from cryptography) (1.17.0)
+2024-08-13T14:41:36,720 Requirement already satisfied: pycparser in /Users/bearydev/.config/gcloud/virtenv/lib/python3.11/site-packages (from cffi>=1.12->cryptography) (2.22)
+2024-08-13T14:41:36,721 Created temporary directory: /private/var/folders/7n/mg381kx96d77tr614rmw_3pw0000gn/T/pip-unpack-_v17w9w2
+2024-08-13T14:41:36,745 Removed build tracker: '/private/var/folders/7n/mg381kx96d77tr614rmw_3pw0000gn/T/pip-build-tracker-nom9wmre'

@@ -1,0 +1,7 @@
+2024-08-13 14:52:13,728 DEBUG    root            Loaded Command Group: ['gcloud', 'auth']
+2024-08-13 14:52:13,734 DEBUG    root            Loaded Command Group: ['gcloud', 'auth', 'login']
+2024-08-13 14:52:13,735 ERROR    root            (gcloud.auth.login) unrecognized arguments: asia-southeast-1-docker.pkg.dev 
+
+To search the help text of gcloud commands, run:
+  gcloud help -- SEARCH_TERMS
+2024-08-13 14:52:13,738 DEBUG    root            Metrics reporting process started...

@@ -1,0 +1,11 @@
+2024-08-13 14:52:31,274 DEBUG    root            Loaded Command Group: ['gcloud', 'auth']
+2024-08-13 14:52:31,277 DEBUG    root            Loaded Command Group: ['gcloud', 'auth', 'configure_docker']
+2024-08-13 14:52:31,278 DEBUG    root            Running [gcloud.auth.configure-docker] with arguments: [REGISTRIES: "asia-southeast-1-docker.pkg.dev"]
+2024-08-13 14:52:31,402 INFO     ___FILE_ONLY___ Adding credentials for: asia-southeast-1-docker.pkg.dev
+
+2024-08-13 14:52:31,402 WARNING  root            asia-southeast-1-docker.pkg.dev is not a supported registry
+2024-08-13 14:52:31,402 INFO     ___FILE_ONLY___ gcloud credential helpers already registered correctly.
+
+2024-08-13 14:52:31,402 DEBUG    root            Chosen display Format:default
+2024-08-13 14:52:31,403 INFO     root            Display format: "default"
+2024-08-13 14:52:31,406 DEBUG    root            Metrics reporting process started...

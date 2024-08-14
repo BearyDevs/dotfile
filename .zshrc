@@ -134,17 +134,17 @@ alias clr='clear'
 alias dl='home; cd Downloads'
 # alias cls='clear; showinfo'
 # alias cls='clear; neofetch; showinforandom;'
-alias cls='clear; neofetch;'
-# alias cls='clear; showinforandom;'
 alias nf='neofetch'
-alias zshrc='vim ~/.zshrc'
+alias zshrc='nvim ~/.zshrc'
 alias zshreload='source ~/.zshrc'
 alias reloadzsh='source ~/.zshrc'
 alias dotconfig='cd ~/.config'
 alias dotlocal='cd ~/.local'
 alias dotcache='cd ~/.cache'
-alias vim='nvim'
-alias vi='nvim'
+# alias vim='nvim'
+# alias vi='nvim'
+alias vim='echo "Use nvim instead"'
+alias vi='echo "Use nvim instead"'
 alias vide='neovide'
 alias vimcf='home; cd ~/.config/nvim'
 alias nvimcf='home; cd ~/.config/nvim'
@@ -715,120 +715,6 @@ typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
 # Unlock to Install 3rd Party App
 alias unlock-install='sudo spctl --global-disable && sudo xattr -cr' # program path after that, can drag into
 
-# alias ls='exa -s=extension -snew --group-directories-first'
-
-# EZA instead of EXA
-# alias ls="eza --icons=always"
-alias ls="eza --color=always --long --icons=always --no-filesize --no-time --no-user --no-permissions"
-alias l="eza --color=always --long --icons=always --group-directories-first"
-alias ll="eza --color=always --long --icons=always --group-directories-first -a"
-
-# Zoxide (Fast to path with some text not full)
-eval "$(zoxide init zsh)"
-alias cd='z'
-
-alias lsa='exa -a -s=extension -snew --group-directories-first'
-# alias ll='exa -la -s=extension -snew --group-directories-first'
-alias home='cd ~'
-alias hh='home; clear'
-alias clr='clear'
-# alias clr='clear; neofetch; showinfo'
-# alias clr='clear; neofetch --source ~/neofetch-custom.txt'
-alias dl='home; cd Downloads'
-# alias cls='clear; showinfo'
-# alias cls='clear; showinforandom; neofetch'
-# alias cls='clear; neofetch;'
-alias cls='clear; showinforandom;'
-alias nf='neofetch'
-alias zshrc='vim ~/.zshrc'
-alias zshreload='source ~/.zshrc'
-alias reloadzsh='source ~/.zshrc'
-alias dotconfig='cd ~/.config'
-alias dotlocal='cd ~/.local'
-alias dotcache='cd ~/.cache'
-alias vim='nvim'
-alias vi='nvim'
-alias vide='neovide'
-alias vimcf='home; cd ~/.config/nvim'
-alias nvimcf='home; cd ~/.config/nvim'
-alias vimlazy='home; cd ~/.config/nvim/lua/'
-alias nvimlazy='home; cd ~/.config/nvim/lua/'
-alias vimdata='home; cd ~/.local'
-alias vimcache='cd ~/.cache'
-alias lazypath='cd ~/.local/share/nvim/lazy/LazyVim'
-alias dl='home; cd Downloads'
-alias dt='home; cd Desktop'
-alias work='dl; cd Projects'
-alias neofetch-config='nvim ~/.config/neofetch/config.conf'
-alias sudovim='sudo -E nvim' # NvChad
-alias neovide='neovide --maximized'
-alias clear-vimdata='rm -rf ~/.local/share/nvim && rm -rf ~/.local/state/nvim && rm -rf ~/.cache/nvim && echo "Clear all neovim-data successfully"'
-
-alias env='printenv'
-
-alias this='echo $0'
-
-alias neovideframe='vim $HOME/.config/neovide/config.toml'
-
-
-# Standard colors
-alias echoblack='echo -e "\033[0;30mThis is black text\033[0m"'
-alias echored='echo -e "\033[0;31mThis is red text\033[0m"'
-alias echogreen='echo -e "\033[0;32mThis is green text\033[0m"'
-alias echoyellow='echo -e "\033[0;33mThis is yellow text\033[0m"'
-alias echoblue='echo -e "\033[0;34mThis is blue text\033[0m"'
-alias echomagenta='echo -e "\033[0;35mThis is magenta text\033[0m"'
-alias echocyan='echo -e "\033[0;36mThis is cyan text\033[0m"'
-alias echowhite='echo -e "\033[0;37mThis is white text\033[0m"'
-
-# Bright colors
-alias echobrightblack='echo -e "\033[1;30mThis is bright black text\033[0m"'
-alias echobrightred='echo -e "\033[1;31mThis is bright red text\033[0m"'
-alias echobrightgreen='echo -e "\033[1;32mThis is bright green text\033[0m"'
-alias echobrightyellow='echo -e "\033[1;33mThis is bright yellow text\033[0m"'
-alias echobrightblue='echo -e "\033[1;34mThis is bright blue text\033[0m"'
-alias echobrightmagenta='echo -e "\033[1;35mThis is bright magenta text\033[0m"'
-alias echobrightcyan='echo -e "\033[1;36mThis is bright cyan text\033[0m"'
-alias echobrightwhite='echo -e "\033[1;37mThis is bright white text\033[0m"'
-
-alias echodeepblue='echo -e "\033[38;5;21mThis is deep blue text\033[0m"'
-alias echowine='echo -e "\033[38;5;88mThis is wine red text\033[0m"'
-alias echoolive='echo -e "\033[38;5;100mThis is olive text\033[0m"'
-alias echogray='echo -e "\033[38;5;244mThis is gray text\033[0m"'
-alias echopink='echo -e "\033[38;2;255;105;180mThis is pink text\033[0m"'
-alias echoskyblue='echo -e "\033[38;2;135;206;235mThis is sky blue text\033[0m"'
-alias echogold='echo -e "\033[38;2;255;215;0mThis is gold text\033[0m"'
-alias echoteal='echo -e "\033[38;2;0;128;128mThis is teal text\033[0m"'
-
-function colors() {
-    echo -e "\033[0;30mThis is black text\033[0m"
-    echo -e "\033[0;31mThis is red text\033[0m"
-    echo -e "\033[0;32mThis is green text\033[0m"
-    echo -e "\033[0;33mThis is yellow text\033[0m"
-    echo -e "\033[0;34mThis is blue text\033[0m"
-    echo -e "\033[0;35mThis is magenta text\033[0m"
-    echo -e "\033[0;36mThis is cyan text\033[0m"
-    echo -e "\033[0;37mThis is white text\033[0m"
-    echo -e "\033[1;30mThis is bright black text\033[0m"
-    echo -e "\033[1;31mThis is bright red text\033[0m"
-    echo -e "\033[1;32mThis is bright green text\033[0m"
-    echo -e "\033[1;33mThis is bright yellow text\033[0m"
-    echo -e "\033[1;34mThis is bright blue text\033[0m"
-    echo -e "\033[1;35mThis is bright magenta text\033[0m"
-    echo -e "\033[1;36mThis is bright cyan text\033[0m"
-    echo -e "\033[1;37mThis is bright white text\033[0m"
-    echo -e "\033[38;5;21mThis is deep blue text\033[0m"
-    echo -e "\033[38;5;88mThis is wine red text\033[0m"
-    echo -e "\033[38;5;100mThis is olive text\033[0m"
-    echo -e "\033[38;5;244mThis is gray text\033[0m"
-    echo -e "\033[38;2;255;105;180mThis is pink text\033[0m"
-    echo -e "\033[38;2;135;206;235mThis is sky blue text\033[0m"
-    echo -e "\033[38;2;255;215;0mThis is gold text\033[0m"
-    echo -e "\033[38;2;0;128;128mThis is teal text\033[0m"
-}
-
-alias color='colors'
-
 # ╭──────────────────────────────────────────────────────────╮
 # │ #Git │
 # ╰──────────────────────────────────────────────────────────╯
@@ -1251,6 +1137,36 @@ alias ex='exit'
 alias adbcheckbattery='cd ~/Downloads/platform-tools/ && ./adb shell dumpsys battery'
 # mSavedBatteryAsoc => This is battery health percentage
 
+# ╭──────────────────────────────────────────────────────────╮
+# │ GCloud                                                   │
+# ╰──────────────────────────────────────────────────────────╯
+# Must downloads binary from https://cloud.google.com/sdk/docs/install
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/bearydev/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/bearydev/Downloads/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/bearydev/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/bearydev/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
+alias gcloud-login='gcloud auth login'
+alias gcloud-activate-docker='gcloud auth configure-docker asia-southeast1-docker.pkg.dev'
+alias gcloud-update='gcloud components update'
+
+# Tagging the local image
+#   LOCATION-docker.pkg.dev/PROJECT-ID/REPOSITORY/IMAGE
+  # demo path like breadcrumb from of current at google-cloud
+  #   $ docker build -t asia-southeast1-docker.pkg.dev/easy-commerce-workshop/example-backend <dockerfile path or current use .>
+
+
+# ╭──────────────────────────────────────────────────────────╮
+# │ AeroSpace                                                │
+# ╰──────────────────────────────────────────────────────────╯
+# $ brew install --cask nikitabobko/tap/aerospace
+
+# Create directory
+# $ mkdir -p ~/.config/aerospace
+# $ cd ~/.config/aerospace && touch aerospace.toml
+
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-clear
+c
+

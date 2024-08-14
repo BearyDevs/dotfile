@@ -93,6 +93,7 @@ return {
       "gopls",
       "bash-language-server",
       "java-debug-adapter",
+      "dot-language-server",
     },
     cmd = {
       "Mason",

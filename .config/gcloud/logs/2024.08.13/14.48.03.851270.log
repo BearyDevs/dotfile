@@ -1,0 +1,5 @@
+2024-08-13 14:48:03,851 ERROR    root            (gcloud) unrecognized arguments: --list (did you mean '--quiet'?) 
+
+To search the help text of gcloud commands, run:
+  gcloud help -- SEARCH_TERMS
+2024-08-13 14:48:03,854 DEBUG    root            Metrics reporting process started...
