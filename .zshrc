@@ -134,6 +134,7 @@ alias clr='clear'
 alias dl='home; cd Downloads'
 # alias cls='clear; showinfo'
 # alias cls='clear; neofetch; showinforandom;'
+alias cls='clear; showinforandom;'
 alias nf='neofetch'
 alias zshrc='nvim ~/.zshrc'
 alias zshreload='source ~/.zshrc'
@@ -141,10 +142,10 @@ alias reloadzsh='source ~/.zshrc'
 alias dotconfig='cd ~/.config'
 alias dotlocal='cd ~/.local'
 alias dotcache='cd ~/.cache'
-# alias vim='nvim'
-# alias vi='nvim'
-alias vim='echo "Use nvim instead"'
-alias vi='echo "Use nvim instead"'
+alias vim='nvim'
+alias vi='nvim'
+# alias vim='echo "Use nvim instead"'
+# alias vi='echo "Use nvim instead"'
 alias vide='neovide'
 alias vimcf='home; cd ~/.config/nvim'
 alias nvimcf='home; cd ~/.config/nvim'
@@ -456,10 +457,6 @@ alias killtm='tmux kill-server'
 
 # Rename sessions
 # $ tmux rename-session -t mysession mynewsession
-
-# Run on startup
-# clr
-# cls
 
 # ╭──────────────────────────────────────────────────────────╮
 # │ ZSH Additionals config for macOS │
@@ -1166,7 +1163,14 @@ alias gcloud-update='gcloud components update'
 # $ mkdir -p ~/.config/aerospace
 # $ cd ~/.config/aerospace && touch aerospace.toml
 
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+# ╭──────────────────────────────────────────────────────────╮
+# │ C#                                                       │
+# ╰──────────────────────────────────────────────────────────╯
+# run app in console
+# $ dotnet run
+alias create-dotnet-console-app='dotnet new console -n' # dotnet new console -n AppName
+
 c
 
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

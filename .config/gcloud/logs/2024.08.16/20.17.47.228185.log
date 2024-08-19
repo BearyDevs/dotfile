@@ -1,0 +1,12 @@
+2024-08-16 20:17:47,229 DEBUG    root            Loaded Command Group: ['gcloud', 'config']
+2024-08-16 20:17:47,230 DEBUG    root            Loaded Command Group: ['gcloud', 'config', 'configurations']
+2024-08-16 20:17:47,231 DEBUG    root            Loaded Command Group: ['gcloud', 'config', 'configurations', 'describe']
+2024-08-16 20:17:47,232 DEBUG    root            Running [gcloud.config.configurations.describe] with arguments: [--format: "value[separator=""](properties.core.account,properties.core.project)", CONFIGURATION_NAME: "default"]
+2024-08-16 20:17:47,232 DEBUG    root            Chosen display Format:default value[separator=""](properties.core.account,properties.core.project)
+2024-08-16 20:17:47,233 INFO     root            Display format: "default value[separator=""](properties.core.account,properties.core.project)"
+2024-08-16 20:17:47,241 INFO     ___FILE_ONLY___ redrx.dev@gmail.comcivic-shell-432406-s0
+
+2024-08-16 20:17:47,259 DEBUG    root            Checking for updates...
+2024-08-16 20:17:47,279 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): dl.google.com:443
+2024-08-16 20:17:47,415 DEBUG    urllib3.connectionpool https://dl.google.com:443 "GET /dl/cloudsdk/channels/rapid/components-2.json HTTP/1.1" 200 223380
+2024-08-16 20:17:47,559 DEBUG    root            Metrics reporting process started...
