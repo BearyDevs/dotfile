@@ -1,0 +1,13 @@
+2024-08-24 14:46:06,212 DEBUG    root            Loaded Command Group: ['gcloud', 'projects']
+2024-08-24 14:46:06,216 DEBUG    root            Loaded Command Group: ['gcloud', 'projects', 'describe']
+2024-08-24 14:46:06,217 DEBUG    root            Running [gcloud.projects.describe] with arguments: [--account: "redrx.dev@gmail.com", --configuration: "default", --format: "value(name)", PROJECT_ID_OR_NUMBER: "civic-shell-432406-s0"]
+2024-08-24 14:46:06,251 DEBUG    google.auth.transport.requests Making request: POST https://oauth2.googleapis.com/token
+2024-08-24 14:46:06,263 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): oauth2.googleapis.com:443
+2024-08-24 14:46:06,421 DEBUG    urllib3.connectionpool https://oauth2.googleapis.com:443 "POST /token HTTP/1.1" 200 None
+2024-08-24 14:46:06,469 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudresourcemanager.googleapis.com:443
+2024-08-24 14:46:07,708 DEBUG    urllib3.connectionpool https://cloudresourcemanager.googleapis.com:443 "GET /v1/projects/civic-shell-432406-s0?alt=json HTTP/1.1" 200 None
+2024-08-24 14:46:07,710 DEBUG    root            Chosen display Format:default value(name)
+2024-08-24 14:46:07,710 INFO     root            Display format: "default value(name)"
+2024-08-24 14:46:07,720 INFO     ___FILE_ONLY___ My First Project
+
+2024-08-24 14:46:07,724 DEBUG    root            Metrics reporting process started...

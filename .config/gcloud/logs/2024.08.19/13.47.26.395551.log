@@ -1,0 +1,10 @@
+2024-08-19 13:47:26,406 DEBUG    root            Loaded Command Group: ['gcloud', 'projects']
+2024-08-19 13:47:26,411 DEBUG    root            Loaded Command Group: ['gcloud', 'projects', 'describe']
+2024-08-19 13:47:26,412 DEBUG    root            Running [gcloud.projects.describe] with arguments: [--account: "redrx.dev@gmail.com", --configuration: "default", --format: "value(name)", PROJECT_ID_OR_NUMBER: "civic-shell-432406-s0"]
+2024-08-19 13:47:26,445 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudresourcemanager.googleapis.com:443
+2024-08-19 13:47:27,651 DEBUG    urllib3.connectionpool https://cloudresourcemanager.googleapis.com:443 "GET /v1/projects/civic-shell-432406-s0?alt=json HTTP/1.1" 200 None
+2024-08-19 13:47:27,652 DEBUG    root            Chosen display Format:default value(name)
+2024-08-19 13:47:27,652 INFO     root            Display format: "default value(name)"
+2024-08-19 13:47:27,664 INFO     ___FILE_ONLY___ My First Project
+
+2024-08-19 13:47:27,668 DEBUG    root            Metrics reporting process started...

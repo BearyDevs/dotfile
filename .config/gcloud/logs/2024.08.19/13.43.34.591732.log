@@ -1,0 +1,4 @@
+2024-08-19 13:43:34,597 DEBUG    root            Loaded Command Group: ['gcloud', 'projects']
+2024-08-19 13:43:34,600 DEBUG    root            Loaded Command Group: ['gcloud', 'projects', 'describe']
+2024-08-19 13:43:34,600 DEBUG    root            Running [gcloud.projects.describe] with arguments: [--account: "redrx.dev@gmail.com", --configuration: "default", --format: "value(name)", PROJECT_ID_OR_NUMBER: "civic-shell-432406-s0"]
+2024-08-19 13:43:34,614 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudresourcemanager.googleapis.com:443
