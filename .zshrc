@@ -547,7 +547,7 @@ alias dkara='rm -rf ~/dotfile/.config/karabiner'
 alias dgh='rm -rf ~/dotfile/.config/gh'
 alias diterm='rm -rf ~/dotfile/.config/iterm2'
 alias bkneofetchcustom='cp -rvf ~/neofetch-custom.txt ~/dotfile && echo "\033[1;36m **neofetch-custom.txt copy success\033[0m"'
-alias afterdone='cd ~/dotfile && gs && gaa && gc && gp && home && clr && echo -e DOTFILE STORE SUCCESS'
+alias afterdone='cd ~/dotfile && gs && gaa && gc && gp && home && cls && echo -e DOTFILE STORE SUCCESS'
 alias store-iterm2-all-config='cp ~/Library/Preferences/com.googlecode.iterm2.plist ~/dotfile && echo "\033[1;36m **com.googlecode.iterm2.plist copy success\033[0m"'
 alias restore-iterm2-config='cp ~/dotfile/com.googlecode.iterm2.plist ~/Library/Preferences/com.googlecode.iterm2.plist'
 
