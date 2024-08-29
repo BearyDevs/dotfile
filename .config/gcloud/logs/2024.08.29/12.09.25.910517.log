@@ -1,0 +1,3 @@
+2024-08-29 12:09:25,921 DEBUG    root            Loaded Command Group: ['gcloud', 'projects']
+2024-08-29 12:09:25,925 DEBUG    root            Loaded Command Group: ['gcloud', 'projects', 'describe']
+2024-08-29 12:09:25,925 DEBUG    root            Running [gcloud.projects.describe] with arguments: [--account: "redrx.dev@gmail.com", --configuration: "default", --format: "value(name)", PROJECT_ID_OR_NUMBER: "civic-shell-432406-s0"]

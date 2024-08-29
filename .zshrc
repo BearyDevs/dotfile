@@ -744,6 +744,7 @@ alias gd='git diff'
 alias gco='git checkout' # git checkout branchName || git checkout -b branchName || git checkout HEAD fileName.[filesignature]txt, js, ts
 alias gre='git restore'
 alias gmer='git merge'
+alias gdeploy='git status -s; git add .; git commit; git push'
 
 alias ccp='pwd | pbcopy'
 alias vscode-repeat-key='defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false'
