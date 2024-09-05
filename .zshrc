@@ -543,7 +543,7 @@ alias bkconfig='cp -rvf ~/.config ~/dotfile && echo "\033[1;36m **.config copy s
 alias bkp10='cp -rvf ~/.p10k.zsh ~/dotfile && echo "\033[1;36m **.p10k.zsh copy success\033[0m"'
 alias bktmux='cp -rvf ~/.tmux.conf ~/dotfile && echo "\033[1;36m **.tmux.conf copy success\033[0m"'
 alias bkzsh='cp -rvf ~/.zshrc ~/dotfile && echo "\033[1;36m **.zshrc copy success\033[0m"'
-alias bkneofetchcustom='cp -rvf ~/neofetch-custom.txt ~/dotfile && echo "\033[1;36m **neofetch-custom.txt copy success\033[0m"'
+alias bkneofetchcustom='cp -rvf ~/neofetch-custom.txt ~/dotfile && cp -rvf ~/neofetch-custom2.txt ~/dotfile && echo "\033[1;36m **neofetch-custom.txt copy success\033[0m"'
 alias store-iterm2-all-config='cp ~/Library/Preferences/com.googlecode.iterm2.plist ~/dotfile && echo "\033[1;36m **com.googlecode.iterm2.plist copy success\033[0m"'
 
 alias restore-iterm2-config='cp ~/dotfile/com.googlecode.iterm2.plist ~/Library/Preferences/com.googlecode.iterm2.plist'
@@ -553,7 +553,7 @@ alias dotfile='cd ~/dotfile/'
 alias afterDone='cd ~/dotfile; gs; gaa; gc; gp; home; cls; echo -e DOTFILE STORE SUCCESS'
 alias afterStore='echo -e "\033[38;2;255;215;0mALL SCRIPT BACKUP IS DONE, Please commit state\033[0m"; sleep 2; afterDone'
 
-alias store-dotfile='home; dlconfigfirst; bkconfig; bkp10; bktmux; bkzsh; bkneofetchcustom; store-iterm2-all-config; afterStore'
+alias storedotfile='home; dlconfigfirst; bkconfig; bkp10; bktmux; bkzsh; bkneofetchcustom; store-iterm2-all-config; afterStore'
 
 alias minfo='echo -e "\033[1;31m🅷 🅸 \033[0m \033[1;38;2;255;215;0m🅱 🅴 🅰 🆁 🆈 , \033[38;2;255;105;180m🅷 🅰 🅿 🅿 🆈 \033[0m \033[1;38;2;148;0;211m🅲 🅾 🅳 🅸 🅽 🅶 .\033[0m"' # Bold font
 
@@ -725,7 +725,6 @@ alias mic-vol='osascript -e "set volume input volume 85"'
 
 # // Expo Doctor is a command line tool used to diagnose issues in your Expo project. To use it, run the following command in your project's root directory:
 
-cls
 
 # Generated for envman. Do not edit.
 [ -s "$HOME/.config/envman/load.sh" ] && source "$HOME/.config/envman/load.sh"
@@ -741,3 +740,4 @@ source /opt/homebrew/share/zsh-history-substring-search/zsh-history-substring-se
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
+cls

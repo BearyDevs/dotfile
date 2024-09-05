@@ -94,6 +94,8 @@ return {
       "bash-language-server",
       "java-debug-adapter",
       "dot-language-server",
+      "htmx-lsp",
+      "mdx-analyzer",
     },
     cmd = {
       "Mason",

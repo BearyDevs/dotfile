@@ -1,8 +1,0 @@
-{
-  "dependencies": {
-    "create-next-app": "^14.2.2",
-    "create-nextron-app": "^5.2.0",
-    "create-t3-app": "^7.32.0",
-    "nextui-cli": "^0.1.5"
-  }
-}
