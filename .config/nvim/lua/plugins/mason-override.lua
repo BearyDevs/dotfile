@@ -56,7 +56,7 @@ return {
       "omnisharp",
       "omnisharp-mono",
       "prettier",
-      -- "prettierd",
+      "prettierd",
       "prisma-language-server",
       "prosemd-lsp",
       "pylint",

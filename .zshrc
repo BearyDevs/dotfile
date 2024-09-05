@@ -38,6 +38,7 @@ alias npmgloballist='npm list -g --depth=0'
 # Or
 # $ npx npm-check-updates -u
 # $ bun install
+alias bunglobal-list='bun pm ls -g'
 
 # ╭──────────────────────────────────────────────────────────╮
 # │ YARN                                                     │
@@ -142,10 +143,11 @@ alias reloadzsh='source ~/.zshrc'
 alias dotconfig='cd ~/.config'
 alias dotlocal='cd ~/.local'
 alias dotcache='cd ~/.cache'
-# alias vim='nvim'
+alias vim='nvim'
 # alias vi='nvim'
-alias vim='echo "Use nvim instead"'
-alias vi='echo "Use nvim instead"'
+# alias vim='echo "Use nvim instead"'
+# alias vi='echo "Use nvim instead"'
+alias vi='echo "Use vim instead"'
 alias vide='neovide'
 alias vimcf='home; cd ~/.config/nvim'
 alias nvimcf='home; cd ~/.config/nvim'
@@ -1170,6 +1172,38 @@ alias gcloud-update='gcloud components update'
 # run app in console
 # $ dotnet run
 alias create-dotnet-console-app='dotnet new console -n' # dotnet new console -n AppName
+
+# ╭──────────────────────────────────────────────────────────╮
+# │ InkDrop                                                  │
+# ╰──────────────────────────────────────────────────────────╯
+alias inkdrop-keymap='nvim /Users/bearydev/Library/Application\ Support/inkdrop/keymap.json'
+alias mic-vol='osascript -e "set volume input volume 85"'
+
+# ╭──────────────────────────────────────────────────────────╮
+# │ Expo                                                     │
+# ╰──────────────────────────────────────────────────────────╯
+# $ bun install -g eas-cli 
+#
+# // EAS CLI is used to log in to your Expo account and compile your app using different EAS services such as Build, Update, or Submit. You can also use this tool to:
+# Publish your app to the app stores
+# Create a development, preview, or production build of your app
+# Create over-the-air (OTA) updates
+# Manage your app credentials
+# Create an ad hoc provisioning profile for an iOS device
+
+
+# $ brew install expo-orbit
+
+# // Orbit is a macOS and Windows app that enables:
+# Install and launch builds from EAS on physical devices and emulators.
+# Install and launch updates from EAS on Android Emulators or iOS Simulators.
+# Launch snack projects on Android Emulators or iOS Simulators.
+# Use local files to install and launch apps. Orbit supports any Android .apk, iOS Simulator compatible .app, or ad hoc signed apps.
+# See a list of pinned projects from your EAS dashboard.
+
+# $ bunx expo-doctor
+
+# // Expo Doctor is a command line tool used to diagnose issues in your Expo project. To use it, run the following command in your project's root directory:
 
 c
 

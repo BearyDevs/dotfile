@@ -1,0 +1,9 @@
+2024-08-30 12:59:49,873 DEBUG    root            Loaded Command Group: ['gcloud', 'config']
+2024-08-30 12:59:49,874 DEBUG    root            Loaded Command Group: ['gcloud', 'config', 'configurations']
+2024-08-30 12:59:49,876 DEBUG    root            Loaded Command Group: ['gcloud', 'config', 'configurations', 'describe']
+2024-08-30 12:59:49,876 DEBUG    root            Running [gcloud.config.configurations.describe] with arguments: [--format: "value[separator=""](properties.core.account,properties.core.project)", CONFIGURATION_NAME: "default"]
+2024-08-30 12:59:49,877 DEBUG    root            Chosen display Format:default value[separator=""](properties.core.account,properties.core.project)
+2024-08-30 12:59:49,877 INFO     root            Display format: "default value[separator=""](properties.core.account,properties.core.project)"
+2024-08-30 12:59:49,882 INFO     ___FILE_ONLY___ redrx.dev@gmail.comcivic-shell-432406-s0
+
+2024-08-30 12:59:49,885 DEBUG    root            Metrics reporting process started...
