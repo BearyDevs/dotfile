@@ -545,6 +545,8 @@ alias bktmux='cp -rvf ~/.tmux.conf ~/dotfile && echo "\033[1;36m **.tmux.conf co
 alias bkzsh='cp -rvf ~/.zshrc ~/dotfile && echo "\033[1;36m **.zshrc copy success\033[0m"'
 alias bkneofetchcustom='cp -rvf ~/neofetch-custom.txt ~/dotfile && cp -rvf ~/neofetch-custom2.txt ~/dotfile && echo "\033[1;36m **neofetch-custom.txt copy success\033[0m"'
 alias store-iterm2-all-config='cp ~/Library/Preferences/com.googlecode.iterm2.plist ~/dotfile && echo "\033[1;36m **com.googlecode.iterm2.plist copy success\033[0m"'
+alias bkwakatime='cp -rvf ~/.wakatime ~/dotfile && echo "\033[1;36m **.wakatime copy success\033[0m"'
+alias bkgitconfig='cp -rvf ~/.gitconfig ~/dotfile && echo "\033[1;36m **.gitconfig copy success\033[0m"'
 
 alias restore-iterm2-config='cp ~/dotfile/com.googlecode.iterm2.plist ~/Library/Preferences/com.googlecode.iterm2.plist'
 
@@ -553,7 +555,7 @@ alias dotfile='cd ~/dotfile/'
 alias afterDone='cd ~/dotfile; gs; gaa; gc; gp; home; cls; echo -e DOTFILE STORE SUCCESS'
 alias afterStore='echo -e "\033[38;2;255;215;0mALL SCRIPT BACKUP IS DONE, Please commit state\033[0m"; sleep 2; afterDone'
 
-alias storedotfile='home; dlconfigfirst; bkconfig; bkp10; bktmux; bkzsh; bkneofetchcustom; store-iterm2-all-config; afterStore'
+alias storedotfile='home; dlconfigfirst; bkconfig; bkp10; bktmux; bkzsh; bkneofetchcustom; bkwakatime; bkgitconfig; store-iterm2-all-config; afterStore'
 
 alias minfo='echo -e "\033[1;31m🅷 🅸 \033[0m \033[1;38;2;255;215;0m🅱 🅴 🅰 🆁 🆈 , \033[38;2;255;105;180m🅷 🅰 🅿 🅿 🆈 \033[0m \033[1;38;2;148;0;211m🅲 🅾 🅳 🅸 🅽 🅶 .\033[0m"' # Bold font
 
@@ -696,7 +698,10 @@ alias create-dotnet-console-app='dotnet new console -n' # dotnet new console -n 
 # ╭──────────────────────────────────────────────────────────╮
 # │ InkDrop                                                  │
 # ╰──────────────────────────────────────────────────────────╯
-alias inkdrop-keymap='nvim /Users/bearydev/Library/Application\ Support/inkdrop/keymap.json'
+
+# ╭──────────────────────────────────────────────────────────╮
+# │ Mac Fix mic-vol                                          │
+# ╰──────────────────────────────────────────────────────────╯
 alias mic-vol='osascript -e "set volume input volume 85"'
 
 # ╭──────────────────────────────────────────────────────────╮
