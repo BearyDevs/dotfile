@@ -37,8 +37,6 @@ alias npmgloballist='npm list -g --depth=0'
 # $ ncu -u
 # Or
 # $ npx npm-check-updates -u
-# $ bun install
-alias bunglobal-list='bun pm ls -g'
 
 # ╭──────────────────────────────────────────────────────────╮
 # │ YARN                                                     │
@@ -466,6 +464,25 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 # │ Bun completions                                          │
 # ╰──────────────────────────────────────────────────────────╯
 [ -s "/Users/bearydevtoylab/.bun/_bun" ] && source "/Users/bearydevtoylab/.bun/_bun"
+# ╭──────────────────────────────────────────────────────────╮
+# │ Bun check globle installed list                          │
+# ╰──────────────────────────────────────────────────────────╯
+alias bunglobal-list='bun pm ls -g'
+
+# ╭──────────────────────────────────────────────────────────╮
+# │ Bun check for outdated dependencies in project:          │
+# ╰──────────────────────────────────────────────────────────╯
+# $ bun upgrade --dry-run
+
+# ╭──────────────────────────────────────────────────────────╮
+# │ Bun update the dependencies to the latest version        │
+# ╰──────────────────────────────────────────────────────────╯
+# $ bun upgrade
+
+# ╭──────────────────────────────────────────────────────────╮
+# │ Bun update specific dependencies                         │
+# ╰──────────────────────────────────────────────────────────╯
+# $ bun upgrade <package-name>
 
 # ╭──────────────────────────────────────────────────────────╮
 # │ PostgreSQL                                               │
