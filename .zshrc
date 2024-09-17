@@ -138,8 +138,8 @@ alias dl='home; cd Downloads'
 alias cls='clear; echo -e "$(cat ~/neofetch-custom2.txt)"; showinforandom;'
 alias nf='neofetch'
 alias zshrc='nvim ~/.zshrc'
-alias zshreload='source ~/.zshrc'
-alias reloadzsh='source ~/.zshrc'
+alias reload='source ~/.zshrc'
+# alias reloadzsh='source ~/.zshrc'
 alias dotconfig='cd ~/.config'
 alias dotlocal='cd ~/.local'
 alias dotcache='cd ~/.cache'
@@ -370,7 +370,7 @@ alias tmconfig="nvim ~/.tmux.conf"
 alias tm-sname="tmux rename-session -t"
 
 # Function to kill a specific tmux window
-tmkillw() {
+function tmkillw() {
   if [ -z "$1" ]; then
     echo "Usage: tmkillw <window_number>"
     return 1
@@ -379,13 +379,33 @@ tmkillw() {
 }
 
 # Function to kill a specific tmux session
-tmkills() {
+function tmkills() {
   if [ -z "$1" ]; then
     echo "Usage: tmkills <session_name>"
     return 1
   fi
   tmux kill-session -t $1
 }
+# Function to check if tmux is active
+function is_tmux_active() {
+  if [ -z "$TMUX" ]; then
+    echo "false"
+  else
+    echo "true"
+  fi
+}
+
+# Alias to use the function
+alias tmux-active="is_tmux_active"
+
+if [ "$(is_tmux_active)" = "false" ]; then
+    tmux new-session -A -s TMUX;
+fi
+
+# Check if inside a tmux session; if not, start one.
+# if [ -z "$TMUX" ]; then
+#   tm
+# fi
 
 # ╭──────────────────────────────────────────────────────────╮
 # │ tmux plugins management │
@@ -506,7 +526,14 @@ alias create-docker-postgresql=create_docker_postgresql
 # ╭──────────────────────────────────────────────────────────╮
 # │ Android Emulator                                         │
 # ╰──────────────────────────────────────────────────────────╯
-export PATH=$PATH:~/Library/Android/sdk/emulator
+# Android SDK
+export ANDROID_HOME=$HOME/Library/Android/sdk
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/tools
+export PATH=$PATH:$ANDROID_HOME/tools/bin
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+
+alias android-path='cd /Users/bearydevtoylab/Library/Android/sdk'
 alias listavd='emulator -list-avds'
 alias runavd='emulator -avd'
 
@@ -719,7 +746,17 @@ alias create-dotnet-console-app='dotnet new console -n' # dotnet new console -n 
 # ╭──────────────────────────────────────────────────────────╮
 # │ Mac Fix mic-vol                                          │
 # ╰──────────────────────────────────────────────────────────╯
-alias mic-vol='osascript -e "set volume input volume 85"'
+# alias set-mic-vol='osascript -e "set volume input volume 85"'
+
+function set-mic() {
+  if [ -z "$1" ]; then
+    echo "Please provide a volume level (0-100)."
+  else
+    osascript -e "set volume input volume $1"
+  fi
+}
+
+alias set-mic-vol='set-mic'
 
 # ╭──────────────────────────────────────────────────────────╮
 # │ Expo                                                     │
@@ -747,9 +784,18 @@ alias mic-vol='osascript -e "set volume input volume 85"'
 
 # // Expo Doctor is a command line tool used to diagnose issues in your Expo project. To use it, run the following command in your project's root directory:
 
+# ╭──────────────────────────────────────────────────────────╮
+# │ Pod                                                      │
+# ╰──────────────────────────────────────────────────────────╯
+export PATH=$HOME/.gem/bin:$PATH
 
 # Generated for envman. Do not edit.
 [ -s "$HOME/.config/envman/load.sh" ] && source "$HOME/.config/envman/load.sh"
+
+# ╭──────────────────────────────────────────────────────────╮
+# │ Neovim                                                   │
+# ╰──────────────────────────────────────────────────────────╯
+alias nvim-clear-lsplog='rm -rf /Users/bearydevtoylab/.local/state/nvim/lsp.log && echo "Clear lsp.log successfully"'
 
 # ╭──────────────────────────────────────────────────────────╮
 # │ ZSH Additionals config for macOS │

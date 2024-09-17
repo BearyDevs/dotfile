@@ -45,6 +45,7 @@ return {
         "gitattributes",
         "gosum",
         "ruby",
+        "dap_repl",
       },
 
       -- matchup = {
