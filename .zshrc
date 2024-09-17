@@ -596,10 +596,10 @@ alias restore-iterm2-config='cp ~/dotfile/com.googlecode.iterm2.plist ~/Library/
 
 alias dotfile='cd ~/dotfile/'
 
-alias afterDone='cd ~/dotfile; gs; gaa; gc; gp; home; cls; echo -e DOTFILE STORE SUCCESS'
+alias afterDone='cd ~/dotfile; gs; gaa; gc; gp; home; cls; echo -e "\033[38;2;255;215;0mDOTFILE STORE SUCCESS\033[0m"'
 alias afterStore='echo -e "\033[38;2;255;215;0mALL SCRIPT BACKUP IS DONE, Please commit state\033[0m"; sleep 2; afterDone'
 
-alias storedotfile='home; dlconfigfirst; bkconfig; bkp10; bktmux; bkzsh; bkneofetchcustom; bkwakatime; bkgitconfig; store-iterm2-all-config; afterStore'
+alias storeDotfile='home; dlconfigfirst; bkconfig; bkp10; bktmux; bkzsh; bkneofetchcustom; bkwakatime; bkgitconfig; store-iterm2-all-config; afterStore'
 
 alias minfo='echo -e "\033[1;31m🅷 🅸 \033[0m \033[1;38;2;255;215;0m🅱 🅴 🅰 🆁 🆈 , \033[38;2;255;105;180m🅷 🅰 🅿 🅿 🆈 \033[0m \033[1;38;2;148;0;211m🅲 🅾 🅳 🅸 🅽 🅶 .\033[0m"' # Bold font
 
