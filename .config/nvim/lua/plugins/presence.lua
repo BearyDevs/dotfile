@@ -10,7 +10,7 @@ return {
       -- client_id = "793271441293967371", -- Use your own Discord application client id (not recommended)
       -- client_id = "1009122352916857003", -- AstroNvim application id
       log_level = nil, -- Log messages at or above this level (one of the following: "debug", "info", "warn", "error")
-      -- debounce_timeout = 10, -- Number of seconds to debounce events (or calls to `:lua package.loaded.presence:update(<filename>, true)`)
+      debounce_timeout = 10, -- Number of seconds to debounce events (or calls to `:lua package.loaded.presence:update(<filename>, true)`)
       enable_line_number = false, -- Displays the current line number instead of the current project
       blacklist = {
         -- "json",

@@ -168,7 +168,13 @@ return {
     },
     { "<leader>/", LazyVim.pick("live_grep"), desc = "Grep (Root Dir)" },
     { "<leader>:", "<cmd>FzfLua command_history<cr>", desc = "Command History" },
-    { "<leader><space>", LazyVim.pick("files"), desc = "Find Files (Root Dir)" },
+    -- { "<leader><space>", LazyVim.pick("files"), desc = "Find Files (Root Dir)" }, // default
+    { "<leader><space>", LazyVim.pick("files", { hidden = true }), desc = "Find Files (Root Dir)" },
+    -- {
+    --   "<leader><space>",
+    --   LazyVim.pick("files", { hidden = true, fd_opts = "--type f --hidden --follow --exclude .git" }),
+    --   desc = "Find Files (Root Dir, Including Hidden)",
+    -- },
     -- find
     { "<leader>fb", "<cmd>FzfLua buffers sort_mru=true sort_lastused=true<cr>", desc = "Buffers" },
     { "<leader>fc", LazyVim.pick.config_files(), desc = "Find Config File" },

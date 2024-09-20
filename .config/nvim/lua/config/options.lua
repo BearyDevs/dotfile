@@ -9,6 +9,8 @@ vim.scriptencoding = "utf-8"
 
 vim.opt.number = true
 
+vim.o.termguicolors = true
+
 vim.opt.iskeyword:append("-") -- Append word when delete or select hello-Hello <- will select all these words
 vim.opt.iskeyword:append("_") -- Append word when delete or select hello-Hello <- will select all these words
 
@@ -71,22 +73,24 @@ vim.cmd([[au BufNewFile,BufRead Podfile setf ruby]])
 if vim.g.neovide then
   -- vim.opt.laststatus = 0
 
+  vim.g.neovide_background_color = "#041319"
+
   vim.g.neovide_floating_shadow = true
   vim.g.neovide_floating_z_height = 10
   vim.g.neovide_light_angle_degrees = 45
   vim.g.neovide_light_radius = 5
   vim.g.neovide_show_border = true
 
-  vim.opt.guifont = "ComicShannsMono Nerd Font:h20"
+  vim.opt.guifont = "ComicShannsMono Nerd Font:h18"
   vim.g.set_encoding = "utf-8"
   vim.opt.linespace = 0
   vim.g.neovide_scale_factor = 1.0
 
-  vim.g.neovide_transparency = 0.85
-  vim.g.transparency = 0.85
+  vim.g.neovide_transparency = 0.75
+  vim.g.transparency = 0.75
   vim.g.neovide_window_blurred = true
-  vim.g.neovide_floating_blur_amount_x = 10.0
-  vim.g.neovide_floating_blur_amount_y = 10.0
+  vim.g.neovide_floating_blur_amount_x = 20.0
+  vim.g.neovide_floating_blur_amount_y = 20.0
 
   -- vim.g.neovide_show_border = true
 
