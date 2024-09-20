@@ -599,7 +599,7 @@ alias dotfile='cd ~/dotfile/'
 alias afterDone='cd ~/dotfile; gs; gaa; gc; gp; home; cls; echo -e DOTFILE STORE SUCCESS'
 alias afterStore='echo -e "\033[38;2;255;215;0mALL SCRIPT BACKUP IS DONE, Please commit state\033[0m"; sleep 2; afterDone'
 
-alias storeDotfile='home; dlconfigfirst; bkconfig; bkp10; bktmux; bkzsh; bkneofetchcustom; bkwakatime; bkgitconfig; store-iterm2-all-config; afterStore'
+alias store-dotfile='home; dlconfigfirst; bkconfig; bkp10; bktmux; bkzsh; bkneofetchcustom; bkwakatime; bkgitconfig; store-iterm2-all-config; afterStore'
 
 alias minfo='echo -e "\033[1;31m🅷 🅸 \033[0m \033[1;38;2;255;215;0m🅱 🅴 🅰 🆁 🆈 , \033[38;2;255;105;180m🅷 🅰 🅿 🅿 🆈 \033[0m \033[1;38;2;148;0;211m🅲 🅾 🅳 🅸 🅽 🅶 .\033[0m"' # Bold font
 
