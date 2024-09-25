@@ -654,7 +654,7 @@ alias showinforandom='show_info_random'
 # ╰──────────────────────────────────────────────────────────╯
 
 # type gg to use git gui
-
+alias lg='lazygit'
 alias g='git'
 alias gs='git status -s'
 alias gaa='git add .'

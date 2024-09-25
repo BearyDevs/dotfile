@@ -21,12 +21,12 @@ startup_mode = "Maximized"
 
 [font]
 normal.family = "ComicShannsMono Nerd Font"
-# normal.style = "Regular"
-size = 20
+normal.style = "Regular"
+size = 18
 
 [cursor]
 style.shape = "Block"
-style.blinking = "On"
+style.blinking = "Always"
 
 [mouse]
 hide_when_typing = true
