@@ -58,13 +58,13 @@ return {
     "echasnovski/mini.animate",
     opts = function(_, opts)
       opts.scroll = {
-        -- enable = false,
-        timing = function(total_scroll_distance)
-          -- Adjust timing to speed up the scroll.
-          -- You can reduce the total time based on distance.
-          local speed = 0.05 -- A smaller number makes it faster, adjust as needed
-          return speed * total_scroll_distance
-        end,
+        enable = false,
+        -- timing = function(total_scroll_distance)
+        --   -- Adjust timing to speed up the scroll.
+        --   -- You can reduce the total time based on distance.
+        --   local speed = 0.05 -- A smaller number makes it faster, adjust as needed
+        --   return speed * total_scroll_distance
+        -- end,
       }
     end,
   },

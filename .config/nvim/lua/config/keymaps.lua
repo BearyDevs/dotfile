@@ -22,7 +22,7 @@ end
 -- override default
 keymap.set("n", "<leader>|", "", opts) -- disable Vertical split
 keymap.set("n", "<leader>-", "", opts) -- disable Horizontal split
-keymap.set("n", ";", ":", { noremap = true, nowait = true })
+-- keymap.set("n", ";", ":", { noremap = true, nowait = true })
 keymap.set("n", "q", "", opts) -- disable record macro
 
 keymap.set("n", "sh", "<C-w>h")
